@@ -24,7 +24,6 @@ body {
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
-    /*border-radius: 4px;*/
 }  
 .header a.logo {
     font-size: 40px;
@@ -33,20 +32,13 @@ body {
 }  
 .header a:hover {
   border-bottom: 5px solid #ca1515;  
-  border-radius: 0;   /* transform: scaleX(0);  
-  transition: transform 250ms ease-in-out; */
+  border-radius: 0;   
 }  
-/* 
-.header a:hover:after {
-  transform: scaleX(1);
-} */
-
 .header a.active {
   border-bottom: 5px solid #ca1515;  
   border-radius: 0;  
 }
 .header-center{
-    /* float: none; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +54,6 @@ body {
       text-align: left;
     } 
     .header-right {
-      /* float: none; */
       display: flex; 
     }
 }
@@ -102,27 +93,6 @@ body {
 }
 
 
-/* @media screen and (max-width: 800px) { */
-   /* .header.responsive {position: relative;} */
- /* .header.responsive .icon {
-   
-  } */
-  
-  /* .header-center{
-    display: contents;
-  }
-  .header-right{
-
-  }
-
-} */
-
-
-
-
-
-
-
 
 
 .row {
@@ -153,20 +123,7 @@ body {
     }
 }
 
- 
-/* .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 270px 360px;
-    grid-gap: 40px;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: yellow;
-    padding: 20px 0;
-    font-size: 30px;
-  } */
+
 
 .product{
   padding: 100px;
@@ -174,7 +131,6 @@ body {
 
 .pheader {
     overflow: hidden;
-    /* background-color: #fffdfd; */
     padding-bottom: 40px;
     position: relative;
 }
@@ -185,7 +141,7 @@ body {
     padding: 12px;
     text-decoration: none;
     font-size: 18px; 
-    line-height: 25px;    /*border-radius: 4px;*/
+    line-height: 25px;    
 }
 .pheader a.plogo {
     font-size: 40px;
@@ -205,7 +161,7 @@ body {
 @media screen and (max-width: 780px){
   .pheader-right {
     float: left;
-}
+  }
 }
 
 
@@ -268,14 +224,12 @@ a {
 	columns: 3;
 }
 
-/* Slider Style
---------------------------------------*/
+/* Slider Style */
 .cd-slider {
 	position: relative;
 	width: 100%;
 	height: 30rem;
 	overflow: hidden;
-	/* margin-bottom: 8rem; */
 }
 .cd-slider li {
 	position: absolute;
@@ -285,7 +239,7 @@ a {
 	height: 100%;
 	visibility: hidden;
 	transition: visibility 0s 1s;
-  will-change: visibility;
+        will-change: visibility;
 }
 .image {
 	position: absolute;
@@ -297,7 +251,7 @@ a {
 	background-position: 50% 50%;
 	clip: rect(0, 80rem, 50rem, 80rem);
 	transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
-  will-change: clip;
+        will-change: clip;
 }
 .content {
 	position: absolute;
@@ -305,41 +259,28 @@ a {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	/* padding: 2rem 0 0 2rem; */
 	font-size: 9rem;
 	text-align: right;
 }
 .content h2 {
-  /* margin-top: 15px; */
-  font-size: 100px;
+        font-size: 100px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	transform: translateY(-30%);
 	opacity: 0;
 	transition: transform .5s, opacity .5s;
-  will-change: transform, opacity;
+        will-change: transform, opacity;
 }
 .content p {
-  font-size: 23px;
-  padding: 21px;
+  	font-size: 23px;
+  	padding: 21px;
 	transform: translateY(-100%);
 	transition: transform .5s .1s, opacity .5s .1s;
-  will-change: transform, opacity;
+  	will-change: transform, opacity;
 }
 
-/* .content a { */
-	/* display: inline-block; */
-	/* font-size: 23px; */
-	/* text-transform: lowercase; */
-  /* padding: 21px;  */
-   /* 1.5rem; */
-	/* opacity: 0;
-	transform: translateY(-100%);
-	transition: transform .5s .1s, opacity .5s .1s;
-  will-change: transform, opacity; */
-/* } */
-/* Current Slide 
--------------------------------------*/
+
+/* Current Slide */
 li.current {
 	visibility: visible;
 	transition-delay: 0s;
@@ -357,12 +298,7 @@ li.current .content a {
 	opacity: 1;
 	transition-delay: 1.1s;
 }
-/* Prev Slide 
-------------------------------------*/
-/* li.prev_slide .image {
-	clip: rect(0, 0, 50rem, 0);
-}
- */
+
 @media screen and ( max-width: 550px ) {
 	.image { width: 100%; }
 	.content { padding-right: 2rem; }
@@ -416,28 +352,7 @@ li.current .content a {
        .tgrid .desc{font-size:14px;margin-top:-10px;}
      }
 
-    /* @media screen and (max-width: 300px) {
-
-     .tgrid{ grid-template-columns: 1fr 1fr; }
-      .tgrid img { max-width: 100%; }
-
-    } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 /* sale section */
 .sale {
@@ -447,7 +362,6 @@ li.current .content a {
 .salecolumn {
   float: left;
   width: 50%;
-  /* padding: 10px; */
   height: 400px; 
 }
 
@@ -462,10 +376,6 @@ li.current .content a {
   font-size: 30px;
   margin-top: -170px;
   margin-left: -50px;
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(16%, -167%); */
 }
 @media screen and ( max-width: 768px ) {
   .salecolumn{
@@ -475,38 +385,31 @@ li.current .content a {
 
 
 
-
-
 /* feature list*/
 .feature{
   padding: 80px;
 }
-
 .fcolumn {
   float: left;
   width: 25%;
   padding: 10px;
-  /* height: 300px;  */
 }
-
 .frow:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .fcenter{
   text-align: center;
 }
 .fcolumn p{
   color: #797272;
 }
-
 @media screen and ( max-width: 768px ) {
   .fcolumn{
      width: 50%;
      }
-  }
+}
 @media screen and ( max-width: 600px ) {
 .fcolumn{
    width: 100%;
@@ -534,7 +437,6 @@ li.current .content a {
   padding: 20px;
   height: 300px; 
 }
-
 .foorow:after {
   content: "";
   display: table;
@@ -611,14 +513,6 @@ button {
     align-items: center;
   } 
 }
-/* button:hover {
-  cursor: pointer;
-  padding: 16px 24px;
-}
-button:hover ~ input {
-  padding: 16px 0 16px 16px;
-} */
-
 
 .footer1 p{
   text-align: center;
